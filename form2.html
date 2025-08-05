@@ -4,8 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
+    <title>Form 2</title>
     <style>
+        body {
+            background-image: url(ibg.png);
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            background-color: rgb(193, 137, 193);
+            width: fit-content;
+            margin: auto;
+            padding: 50px 30px;
+            margin-top: 90px;
+            border-radius: 20px;
+            height: fit-content;
+            border: 20rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        label {
+            color: white;
+        }
+
+        input {
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid white;
+            width: 100%;
+        }
+
+        input[type="checkbox"] {
+            width: 19px
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px;
+            border-radius: 90px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: rgb(231, 96, 231);
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        b:hover {
+            text-decoration: underline;
+            color: rgb(217, 104, 104);
+        }
+
+        .form:hover {
+            font-size: 0px;
+            text-decoration: underline;
+        }
     </style>
     <link rel="stylesheet" href="navbar.css">
 </head>
@@ -16,6 +80,7 @@
             <h1>Oba's Ass</h1>
         </div>
         <div class="content">
+
             <ul class="nav-links">
                 <li>
                     <a href="index.html" class="nav-it">Home</a>
@@ -41,7 +106,7 @@
                 <li>
                     <a href="gallery.html" class="nav-it">My Gallery</a>
                 </li>
-                 <li>
+                <li>
                     <a href="animations.html" class="nav-it">Animations</a>
                 </li>
                 <li>
@@ -86,27 +151,23 @@
             </ul>
         </div>
     </nav>
-    <img src="doggo.png" alt="">
-    <h1>My name is Doggo</h1>
-    <dl>
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, nostrum.</p>
-        <ul>
-            <li>Lorem, ipsum.</li>
-            <li>Professional Programmer</li>
-            <li>Lorem, ipsum.</li>
-        </ul>
-    </dl>
-    <dl>
-        <h2>Contact Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, neque.</p>
-        <ul>
-            <li>Phone No</li>
-            <li>Email ID</li>
-            <li>Facebook ID</li>
-        </ul>
-    </dl>
-    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    <form>
+        <h1>Login</h1>
+
+        <label for="Email">Email</label><br>
+        <input type="Email" name="Email" id="Email" required><br><br>
+
+        <label for="Password">Password</label><br>
+        <input type="Password" name="Password" id="Password" required><br><br>
+
+        <input type="checkbox" name="Remember_me" id="remme">
+        <label for="remme">Remember Me <b>Forgot Password</b></label>
+
+        <br><br>
+        <button>Log in</button><br><br>
+        <p>Don't have a account <a href="" class="form">Register</a></p>
+    </form>
 </body>
 
 </html>

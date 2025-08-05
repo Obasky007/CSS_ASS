@@ -4,8 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
+    <title>Form 1</title>
     <style>
+        body {
+            background: linear-gradient(to right, rgb(89, 89, 225), rgb(222, 88, 222));
+            ;
+            font-family: sans-serif;
+        }
+
+        form {
+            background-color: white;
+            width: fit-content;
+            padding: 46px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        input[type="text"] {
+            padding: 5px 0;
+            width: 100%;
+        }
+
+        input[type="password"] {
+            padding: 5px 0;
+            width: 100%;
+        }
+
+        button {
+
+            background: linear-gradient(to right, rgb(80, 80, 123), rgb(242, 0, 242));
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 0px;
+            width: 230px;
+        }
+
+        b {
+            font-size: larger;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, rgb(89, 89, 225), rgb(222, 88, 222));
+        }
+
+        .form:hover{
+           font-size: 0px;
+           text-decoration: underline;
+        }
     </style>
     <link rel="stylesheet" href="navbar.css">
 </head>
@@ -16,6 +66,7 @@
             <h1>Oba's Ass</h1>
         </div>
         <div class="content">
+
             <ul class="nav-links">
                 <li>
                     <a href="index.html" class="nav-it">Home</a>
@@ -41,7 +92,7 @@
                 <li>
                     <a href="gallery.html" class="nav-it">My Gallery</a>
                 </li>
-                 <li>
+                <li>
                     <a href="animations.html" class="nav-it">Animations</a>
                 </li>
                 <li>
@@ -86,27 +137,23 @@
             </ul>
         </div>
     </nav>
-    <img src="doggo.png" alt="">
-    <h1>My name is Doggo</h1>
-    <dl>
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, nostrum.</p>
-        <ul>
-            <li>Lorem, ipsum.</li>
-            <li>Professional Programmer</li>
-            <li>Lorem, ipsum.</li>
-        </ul>
-    </dl>
-    <dl>
-        <h2>Contact Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, neque.</p>
-        <ul>
-            <li>Phone No</li>
-            <li>Email ID</li>
-            <li>Facebook ID</li>
-        </ul>
-    </dl>
-    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    <form>
+
+        <h1>Login Form</h1><br>
+
+        <label for="Em/ph">Email or Phone</label><br>
+        <input type="text" name="EmailorPhone" id="Em/ph" required>
+        <br><br>
+        <label for="Password">Password</label><br>
+        <input type="Password" name="Password" id="Password" required>
+        <br>
+        <a href="" class="form">Forgot Password?</a>
+        <br><br> 
+        <br>
+        <button><b>Login</b></button><br><br>
+        <p>Not a member?<a href="" class="form">Sign Up Now</a></p>
+    </form>
 </body>
 
 </html>

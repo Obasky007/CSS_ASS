@@ -4,8 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
+    <title>Navbar 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <style>
+        .nav {
+            display: flex;
+            background-color: rgb(9, 0, 0);
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .lists {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            padding: 0px;
+            margin: 0px;
+            width: 380px;
+        }
+
+        .logo-h {
+            color: white;
+            font-weight: 800;
+            font-size: 20px;
+            align-items: center;
+        }
+
+        .right-r {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .icons {
+            color: white;
+            font-size: 20px;
+            margin-right: 20px;
+        }
     </style>
     <link rel="stylesheet" href="navbar.css">
 </head>
@@ -16,6 +59,7 @@
             <h1>Oba's Ass</h1>
         </div>
         <div class="content">
+
             <ul class="nav-links">
                 <li>
                     <a href="index.html" class="nav-it">Home</a>
@@ -40,8 +84,8 @@
                 </li>
                 <li>
                     <a href="gallery.html" class="nav-it">My Gallery</a>
-                </li>
-                 <li>
+        </li>
+                <li>
                     <a href="animations.html" class="nav-it">Animations</a>
                 </li>
                 <li>
@@ -86,27 +130,35 @@
             </ul>
         </div>
     </nav>
-    <img src="doggo.png" alt="">
-    <h1>My name is Doggo</h1>
-    <dl>
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, nostrum.</p>
-        <ul>
-            <li>Lorem, ipsum.</li>
-            <li>Professional Programmer</li>
-            <li>Lorem, ipsum.</li>
-        </ul>
-    </dl>
-    <dl>
-        <h2>Contact Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, neque.</p>
-        <ul>
-            <li>Phone No</li>
-            <li>Email ID</li>
-            <li>Facebook ID</li>
-        </ul>
-    </dl>
-    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <br>
+    <nav class="nav">
+        <div class="logo-h">
+            <p>Logo Here.</p>
+        </div>
+        <div class="right-r">
+            <div>
+                <ul class="lists">
+                    <li>
+                        <a href="" class="link">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="link">Category</a>
+                    </li>
+                    <li>
+                        <a href="" class="link">Collections</a>
+                    </li>
+                    <li>
+                        <a href="" class="link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-sid">
+                <i class="fa-regular fa-heart icons"></i>
+                <i class="fa-solid fa-cart-shopping icons"></i>
+                <i class="fa-solid fa-user icons"></i>
+            </div>
+        </div>
+    </nav>
 </body>
 
 </html>
